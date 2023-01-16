@@ -18,7 +18,21 @@
 
         <input type="submit" value="submit" />
         <input type="reset" />
+
         <br /> <br /> <br />
+
+
+        <input type="range" min="0" max="50" oninput="myFunction2(this.value)">
+        <p id="valuerange"></p>
+
+        <script>
+            function myFunction2(val) {
+                document.getElementById("valuerange").innerHTML = val;
+            }
+        </script>
+
+        <br /> <br /> <br />
+
 
         <p>Choose your favorite language</p>
         <input type="radio" id="html" name="fave_lang" value="HTML">
@@ -65,19 +79,19 @@
         <label for="myfile">Select file:</label> <br />
 
         <input type="file" id="myfile" name="myfile" />
-        <input type="submit"  value="دریافت کن" />
+        <input type="submit" value="دریافت کن" />
 
 
     </form>
 
     <p>click submit to go to next page action_page.html</p>
-    <a href="HTMLPage2.html">صفحه نمایش 2</a> 
+    <a href="HTMLPage2.html">صفحه نمایش 2</a>
     <br /> <br />
 
     <button onclick="myFunction();">کلیک کنید</button>
     <h2 id="Script1"></h2>
 
-    <script src="Script1.js"></script>
+
 
 </body>
 </html>
